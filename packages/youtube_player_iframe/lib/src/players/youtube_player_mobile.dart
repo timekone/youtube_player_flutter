@@ -145,7 +145,7 @@ class _MobileYoutubePlayerState extends State<RawYoutubePlayer>
           }
         } else {
           if (Platform.isIOS) {
-            return ShouldOverrideUrlLoadingAction.ALLOW;
+            return NavigationActionPolicy.ALLOW;
           }
         }
         return NavigationActionPolicy.CANCEL;
